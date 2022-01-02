@@ -17,6 +17,9 @@ class BankAccount
 
 	public void Deposit(decimal amount)
 	{
+		if(amount < 0){
+			return;
+		}
 		Balance += amount;
 
 		var transaction = new Transaction()
