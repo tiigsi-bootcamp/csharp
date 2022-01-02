@@ -1,11 +1,10 @@
-﻿// Accounts: Number, Owner, Balance, Transactions
+// Accounts: Number, Owner, Balance, Transactions
 // Deposit
 // Withdrawal
 
 // Transaction: Reference, Amount, Date
 
 var account1 = new BankAccount(1, "Test Owner", 10.5M);
-
 account1.Deposit(90);
 account1.Deposit(5);
 account1.Deposit(10);
