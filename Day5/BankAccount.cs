@@ -12,14 +12,17 @@ class BankAccount
 	{
 		AccountNumber = accountNumber;
 		Owner = owner;
-		Balance = initialBalance;
+		
+		Deposit(initialBalance);
 	}
 
 	public void Deposit(decimal amount)
 	{
-		if(amount < 0){
+		if (amount <= 0)
+		{
 			return;
 		}
+		
 		Balance += amount;
 
 		var transaction = new Transaction()
@@ -52,9 +55,9 @@ class BankAccount
 			Console.WriteLine("Ma haysatid lacag kugu filan! 😛");
 			return; // Joog! 😂
 		}
-		
+
 		Balance -= amount;
-	var transaction = new Transaction()
+		var transaction = new Transaction()
 		{
 			Reference = Transactions.Length + 1,
 			Amount = -amount,

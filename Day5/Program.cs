@@ -1,4 +1,4 @@
-// Accounts: Number, Owner, Balance, Transactions
+﻿// Accounts: Number, Owner, Balance, Transactions
 // Deposit
 // Withdrawal
 
@@ -12,7 +12,7 @@ account1.Deposit(10);
 Console.WriteLine("Owner: " + account1.Owner);
 Console.WriteLine("Account: " + account1.AccountNumber + " has balance of: " + account1.Balance.ToString("C"));
 
-account1.Withdraw(1000);
+account1.Withdraw(100);
 
 Console.WriteLine("Account: " + account1.AccountNumber + " has balance of: " + account1.Balance.ToString("C"));
 
