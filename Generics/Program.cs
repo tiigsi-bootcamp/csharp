@@ -45,3 +45,15 @@ int CalculateRectangleArea(Rectangle shape)
 {
 	return shape.Height * shape.Width;
 }
+
+var myLittleList = new MyHappyLittleKid<string>();
+myLittleList.Add("Polic Car");
+myLittleList.Add("Race Car");
+myLittleList.PrintAll();
+
+
+var myLittleList2 = new MyHappyLittleKid<int>();
+myLittleList2.Add(1);
+myLittleList2.Add(1000);
+
+myLittleList2.PrintAll();
